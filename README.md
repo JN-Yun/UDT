@@ -6,8 +6,8 @@ We introduce **U-Net Diffusion Transformer (UDT)**, a novel architecture that co
   <img src="assets/UDT.jpg" width="800">
 </p>
 
-- UDT delivers strong generative performance, faster convergence ($\approx 40\times$ faster), and enhanced representation capability.
-- UDT serves as a drop-in replacement for a wide range of DiT variants, including $\epsilon$-prediction DiTs, pixel-space DiTs such as JiT, models with improved VAEs (e.g., VA-VAE), and text-to-image models such as MMDiT.
+- UDT delivers strong generative performance, faster convergence ($\approx 40\times$ faster than SiT), and enhanced representation capability.
+- UDT serves as a drop-in replacement for a wide range of DiT variants, including $\epsilon$-prediction DiTs, pixel-space DiTs (e.g., JiT), models with improved VAEs (e.g., VA-VAE), and text-to-image models (e.g., MMDiT).
 - UDT achieves (on ImageNet @ $256 \times 256$):
   - UDT-XL/2 (out-of-the-box): **1.41** FID at 500 epochs
   - UDT-XL/2+ (with architectural optimization): **1.42** FID at 350 epochs
