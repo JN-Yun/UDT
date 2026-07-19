@@ -16,7 +16,7 @@ from accelerate import Accelerator
 from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration, set_seed
 
-from loss import SILoss                         # Loss
+from loss.loss import SILoss                         # Loss
 from dataset import CustomDataset               # Dataset
 from diffusers.models import AutoencoderKL      # Model(VAE)
 from models.UDT import UDT_models               # Model(UDT)
