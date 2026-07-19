@@ -32,7 +32,7 @@ Please download [ImageNet](https://www.image-net.org/download.php) and follow th
 
 ### 3. Training
 ```bash
-sh Train_UDT.sh
+sh scrips/Train_UDT.sh
 ```
 You can configure the hyperparameters in `Train_UDT.sh`.
 1. `--udt_mode`: Select the UDT variant:
@@ -45,7 +45,7 @@ For further customization or hyperparameter tuning, modify `train_UDT.py`.
 
 ### 4. Evaluation
 ```bash
-sh evaluation.sh
+sh scrips/evaluation.sh
 ```
 For evaluation, please download the reference batches of ImageNet (256 × 256 and 512 × 512) from [ADM](https://github.com/openai/guided-diffusion/tree/main/evaluations) and place them under `./evaluator/`
 
