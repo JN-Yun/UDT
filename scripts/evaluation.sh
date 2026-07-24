@@ -1,6 +1,6 @@
 
 EXP_DIR="UDT"
-EXP_NAME="UDT+-XL/2-imagenet256"
+EXP_NAME="UDT+-XL-2-imagenet256"
 
 ckpt=epoch-79
 CFG=1.0          # 1.0 (w/o CFG)
