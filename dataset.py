@@ -16,7 +16,7 @@ import torch
 from torch.utils.data import Dataset
 
 
-class CustomDataset_files(Dataset):
+class CustomDataset(Dataset):
     def __init__(self, data_dir):
         PIL.Image.init()
         supported_ext = PIL.Image.EXTENSION.keys() | {'.npy'}
