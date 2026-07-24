@@ -21,7 +21,7 @@ class CustomDataset(Dataset):
         PIL.Image.init()
         supported_ext = PIL.Image.EXTENSION.keys() | {'.npy'}
 
-        self.features_dir = os.path.join(data_dir, 'vae-sd-256')
+        self.features_dir = os.path.join(data_dir, 'vae-sd')
 
         # features
         self._feature_fnames = {
