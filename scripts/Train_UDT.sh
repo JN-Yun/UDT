@@ -1,7 +1,7 @@
 export WANDB_PROJECT="UDT"
 
 EXP_DIR="UDT"
-EXP_NAME="UDT+-XL/2-imagenet256"
+EXP_NAME="UDT+-XL-2-imagenet256"
 
 # Use train_UDT_REPA.py instead of train_UDT.py to enable REPA training
 accelerate launch --num_processes 4 train_UDT.py \
