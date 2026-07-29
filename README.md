@@ -85,7 +85,7 @@ torchrun --nnodes=1 --nproc_per_node=4 generate_UDT.py \
 |            | UDT-XL/2+ (fine-tuned)| 200    | **1.58**     | -->
 
 ## To-do List
-- Release code for UDT with VA-VAE and MMUDT (UDT variant of MMDiT).
+- Release the code for UDT with VA-VAE and MMUDT (UDT variant of MMDiT).
 
 
 ## Acknowledgements
