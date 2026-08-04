@@ -93,15 +93,13 @@ torchrun --nnodes=1 --nproc_per_node=4 generate_UDT.py \
 This codebase is mainly built upon [SiT](https://github.com/willisma/SiT), [REPA](https://github.com/sihyun-yu/REPA), and [ToME-SD](https://github.com/dbolya/tomesd) repositories.
 
 ## 📝 Citation
-If you use this code, please cite our paper: (TBD)
-
-<!-- 
+If you use this code, please cite our paper:
 ```bibtex
-@article{yun2025LSEP,
-  title = {No alignment needed for generation: Learning linearly separable representations in diffusion models},
-  author = {Yun, Junno and Al{\c{c}}alar, Ya{\c{s}}ar Utku and Ak{\c{c}}akaya, Mehmet},
-  journal = {arXiv preprint arXiv:2509.21565},
-  year = {2025}
-}
 
-``` -->
+@article{yun2026udt,
+  title = {UDT: Reconciling U-Nets and Diffusion Transformers with Data-Adaptive Token Reduction},
+  author = {Yun, Junno and Al{\c{c}}alar, Ya{\c{s}}ar Utku and Ak{\c{c}}akaya, Mehmet},
+  journal = {arXiv preprint arXiv:2608.01298},
+  year = {2026}
+}
+```
