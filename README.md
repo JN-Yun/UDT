@@ -1,5 +1,5 @@
 ## UDT: Reconciling U-Nets and Diffusion Transformers with Data-Adaptive Token Reduction ##
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-2509.21565-red.svg)](https://arxiv.org/pdf/2509.21565) -->
+[![arXiv](https://img.shields.io/badge/arXiv-2608.01298-red.svg)](https://arxiv.org/pdf/2608.01298)
 
 We introduce **U-Net Diffusion Transformer (UDT)**, a novel architecture that combines the representation power of DiTs with the hierarchical encoding–decoding structure of U-Nets. UDT introduces data-adaptive token merging for efficient downsampling and upsampling while maintaining the original DiT token dimension.
 <p align="center">
