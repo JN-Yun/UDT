@@ -27,8 +27,7 @@ pip install requirement.txt
 ```
 
 ### 2. Dataset
-Please download [ImageNet](https://www.image-net.org/download.php) and follow the preprocessing protocols described in [EDM2](https://github.com/NVlabs/edm2) and [REPA](https://github.com/sihyun-yu/REPA/tree/main/preprocessing). Then, specify the path using the `--data-dir` configuration.
-
+Please download [ImageNet](https://www.image-net.org/download.php) and follow the preprocessing protocols described in [EDM2](https://github.com/NVlabs/edm2) and [REPA](https://github.com/sihyun-yu/REPA/tree/main/preprocessing). We also provide preprocessing details in `./preprocessing/README.md`, as well as pre-processed data for ImageNet 256x256. Then, specify the dataset path using the `--data-dir` argument.
 
 ### 3. Training
 ```bash
