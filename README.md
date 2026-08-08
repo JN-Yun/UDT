@@ -46,7 +46,7 @@ For further customization or hyperparameter tuning, modify `train_UDT.py`.
 ```bash
 bash scrips/evaluation.sh
 ```
-For evaluation, please download the reference batches of ImageNet (256 × 256 and 512 × 512) from [ADM](https://github.com/openai/guided-diffusion/tree/main/evaluations) and place them under `./evaluator/`
+For evaluation, please download the reference batches for ImageNet (256x256 and 512x512) from [ADM](https://github.com/openai/guided-diffusion/tree/main/evaluations) or via this [Dropbox link](https://www.dropbox.com/scl/fo/mb5dfrjrlkvc0hzexqxke/AHYv7YfoIC2GnyDXDpEWHVY?rlkey=0mg40brrtvdwc9iphivdej8o2&dl=0), and place them in the `./evaluator/` directory.
 
 
 ### 5. Pre-trained Models
