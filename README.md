@@ -1,6 +1,6 @@
 <div align="center">
 
-## ${\color{#a3394b}\Large\textbf{UDT}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
+## ${\color{#7a1f2b}\huge\pmb{\boldsymbol{\mathsf{UDT}}}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
 
 </div>
 
@@ -12,8 +12,7 @@
 
 <div align="center">
 
-[<ins>Junno Yun</ins>](https://scholar.google.com/citations?user=Ou4ff9kAAAAJ&hl=en), [<ins>Yaşar Utku Alçalar</ins>](https://utkualcalar.github.io/), [<ins>Mehmet Akçakaya</ins>](https://imagine.umn.edu/people/mehmet-akcakaya)<br />
-University of Minnesota
+[<ins>Junno Yun</ins>](https://scholar.google.com/citations?user=Ou4ff9kAAAAJ&hl=en), [<ins>Yaşar Utku Alçalar</ins>](https://utkualcalar.github.io/), [<ins>Mehmet Akçakaya</ins>](https://imagine.umn.edu/people/mehmet-akcakaya)
 
 </div>
 
