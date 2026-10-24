@@ -1,5 +1,21 @@
-## UDT: Reconciling U-Nets and Diffusion Transformers with Data-Adaptive Token Reduction ##
-[![arXiv](https://img.shields.io/badge/arXiv-2608.01298-red.svg)](https://arxiv.org/pdf/2608.01298)
+<div align="center">
+
+## ${\color{#a3394b}\Large\textbf{UDT}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
+
+</div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-B39DDB.svg" alt="NeurIPS 2026 Spotlight">
+  <a href="https://arxiv.org/pdf/2608.01298"><img src="https://img.shields.io/badge/arXiv-2608.01298-red.svg" alt="arXiv"></a>
+  <a href="https://udt-dit.github.io/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page"></a>
+</p>
+
+<div align="center">
+
+[<ins>Junno Yun</ins>](https://scholar.google.com/citations?user=Ou4ff9kAAAAJ&hl=en), [<ins>Yaşar Utku Alçalar</ins>](https://utkualcalar.github.io/), [<ins>Mehmet Akçakaya</ins>](https://imagine.umn.edu/people/mehmet-akcakaya)<br />
+University of Minnesota
+
+</div>
 
 We introduce **U-Net Diffusion Transformer (UDT)**, a novel architecture that combines the representation power of DiTs with the hierarchical encoding–decoding structure of U-Nets. UDT introduces data-adaptive token merging for efficient downsampling and upsampling while maintaining the original DiT token dimension.
 <p align="center">
@@ -83,8 +99,8 @@ torchrun --nnodes=1 --nproc_per_node=4 generate_UDT.py \
 | 512×512    | UDT-XL/2+             | 300    | 1.76         |
 |            | UDT-XL/2+ (fine-tuned)| 200    | **1.58**     | -->
 
-## To-do List
-- Release the code for UDT with VA-VAE and MMUDT (UDT variant of MMDiT).
+<!-- ## To-do List
+- Release the code for UDT with VA-VAE and MMUDT (UDT variant of MMDiT). -->
 
 
 ## Acknowledgements
