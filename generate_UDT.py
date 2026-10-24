@@ -8,8 +8,6 @@
 Samples a large number of images from a pre-trained UDT model using DDP.
 Subsequently saves a .npz file that can be used to compute FID and other
 evaluation metrics via the ADM repo: https://github.com/openai/guided-diffusion/tree/main/evaluations
-
-For a simple single-GPU/CPU sampling script, see sample.py.
 """
 import torch
 import torch.distributed as dist
@@ -73,7 +71,7 @@ def main(args):
     Run sampling.
     """
     torch.backends.cuda.matmul.allow_tf32 = args.tf32  # True: fast but may lead to some small numerical differences
-    assert torch.cuda.is_available(), "Sampling with DDP requires at least one GPU. sample.py supports CPU-only usage"
+    assert torch.cuda.is_available(), "Sampling with DDP requires at least one GPU."
     torch.set_grad_enabled(False)
 
     # Setup DDP:cd
@@ -99,14 +97,14 @@ def main(args):
         **block_kwargs
     )
         
-    # Auto-download a pre-trained model or load a custom UDT checkpoint from train.py:
+    # Load a UDT checkpoint (EMA weights) saved by train_UDT.py / train_UDT_REPA.py:
     ckpt_path = args.ckpt
     with torch.serialization.safe_globals([argparse.Namespace]):     
         state_dict = torch.load(ckpt_path, map_location=f'cuda:{device}')['ema']
 
     # Filter out REPA projectors as they are only used during training, not generation
     filtered_state_dict = {k: v for k, v in state_dict.items() if not k.startswith("projectors")}
-    model.load_state_dict(filtered_state_dict, strict=False)
+    model.load_state_dict(filtered_state_dict, strict=True)
     model = model.to(device)
     model.eval()   
     
@@ -212,7 +210,7 @@ if __name__ == "__main__":
                         help="By default, use TF32 matmuls. This massively accelerates sampling on Ampere GPUs.")
 
     # logging/saving:
-    parser.add_argument("--ckpt", type=str, default=None, help="Optional path to a SiT checkpoint.")
+    parser.add_argument("--ckpt", type=str, default=None, help="Path to a UDT checkpoint (.pt).")
     parser.add_argument("--sample_dir", type=str, default="samples")
 
     # model

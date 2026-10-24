@@ -15,6 +15,7 @@ wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar --no-check-ce
 ```bash
 # Run imagenet_tar.py to extract the tar archive using multiprocessing. 
 # This will reduce the extraction time.
+cd [UDT_PATH]/preprocessing   # run all commands below from the preprocessing/ directory
 python imagenet_tar.py tar_path="[DATA_PATH]/ILSVRC2012_img_train.tar" extract_root="[DATA_PATH]/train_raw"
 ```
 

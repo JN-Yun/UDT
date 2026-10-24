@@ -61,7 +61,7 @@ def euler_sampler(
     _dtype = latents.dtype    
     t_steps = torch.linspace(1, 0, num_steps+1, dtype=torch.float64)
     
-    # Apply timestep shift
+    # Apply timestep shift (optional)
     if timestep_shift > 0 and timestep_shift != 1.0:
         t_steps = (timestep_shift * t_steps) / (1 + (timestep_shift - 1) * t_steps)
         

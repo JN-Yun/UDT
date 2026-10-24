@@ -6,9 +6,9 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight" width="283">
-  <a href="https://arxiv.org/pdf/2608.01298"><img src="https://img.shields.io/badge/arXiv-2608.01298-red.svg" alt="arXiv" width="162"></a>
-  <a href="https://udt-dit.github.io/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page" width="120"></a>
+  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight" width="242">
+  <a href="https://arxiv.org/pdf/2608.01298"><img src="https://img.shields.io/badge/arXiv-2608.01298-red.svg" alt="arXiv" width="139"></a>
+  <a href="https://udt-dit.github.io/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page" width="103"></a>
 </p>
 
 <div align="center">
@@ -42,7 +42,7 @@ conda create -n UDT python=3.9 -y
 conda activate UDT
 
 cd UDT
-pip install requirement.txt
+pip install -r requirements.txt
 ```
 
 ### 2. Dataset
@@ -50,7 +50,7 @@ Please download [ImageNet](https://www.image-net.org/download.php) and follow th
 
 ### 3. Training
 ```bash
-bash scrips/Train_UDT.sh
+bash scripts/Train_UDT.sh
 ```
 You can configure the hyperparameters in `Train_UDT.sh`.
 1. `--udt_mode`: Select the UDT variant:
@@ -63,7 +63,7 @@ For further customization or hyperparameter tuning, modify `train_UDT.py`.
 
 ### 4. Evaluation
 ```bash
-bash scrips/evaluation.sh
+bash scripts/evaluation.sh
 ```
 For evaluation, please download the reference batches for ImageNet (256x256 and 512x512) from [ADM](https://github.com/openai/guided-diffusion/tree/main/evaluations), and place them in the `./evaluator/` directory.
 
@@ -71,7 +71,7 @@ For evaluation, please download the reference batches for ImageNet (256x256 and 
 ### 5. Pre-trained Models
 
 We provide pre-trained three different UDT-XL models (UDT, UDT+, and UDT+ with REPA) for ImageNet at 256 resolutions and UDT-XL (UDT+) for ImageNet at 512 resolutions. 
-Pre-trained models are available at the following here [link](https://www.dropbox.com/scl/fo/9jwmy80qztwxidp8pf38c/ANYdHxSdi2flr6-OCujlcJs?rlkey=dl7llhhyr58jcrpd5s3pt4n9z&dl=0). Please download and place the pre-trained models under: `./exp/pretrain/checkpoints`
+Pre-trained models are available at the following here [link](https://www.dropbox.com/scl/fo/9jwmy80qztwxidp8pf38c/ANYdHxSdi2flr6-OCujlcJs?rlkey=dl7llhhyr58jcrpd5s3pt4n9z&dl=0). Please download and place the pre-trained models under: `./exps/pretrain/checkpoints`
 
 ```bash
 ckpt=udt+_REPA        # udt | udt+ | udt+_REPA | udt+_res512 

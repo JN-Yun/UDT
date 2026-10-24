@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Training / sampling outputs
+exps/
+samples/
+wandb/
+
+# Evaluation reference batches and generated samples
+*.npz

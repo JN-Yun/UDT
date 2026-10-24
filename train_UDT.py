@@ -247,7 +247,7 @@ def main(args):
     gt_xs, _ = next(iter(train_dataloader))
     gt_xs = gt_xs[:sample_batch_size]
     gt_xs = sample_posterior(gt_xs.to(device), latents_scale=latents_scale, latents_bias=latents_bias)
-    ys = torch.randint(1000, size=(sample_batch_size,), device=device)
+    ys = torch.randint(args.num_classes, size=(sample_batch_size,), device=device)
     ys = ys.to(device)
     
     n = ys.size(0)  # Create sampling noise
@@ -360,13 +360,11 @@ def parse_args(input_args=None):
     # model
     parser.add_argument("--model", type=str)
     parser.add_argument("--num-classes", type=int, default=1000)
-    parser.add_argument("--encoder-depth", type=int, default=8)
 
     # dataset
     parser.add_argument("--data-dir", type=str, default="../data/imagenet256")
     parser.add_argument("--resolution", type=int, choices=[256, 512], default=256)
     parser.add_argument("--batch-size", type=int, default=256)
-    parser.add_argument("--subset", action=argparse.BooleanOptionalAction, default=False)
 
     # precision
     parser.add_argument("--allow-tf32", action="store_true")
@@ -395,7 +393,6 @@ def parse_args(input_args=None):
     # loss
     parser.add_argument("--path-type", type=str, default="linear", choices=["linear", "cosine"])
     parser.add_argument("--prediction", type=str, default="v", choices=["v"]) 
-    parser.add_argument("--cfg-prob", type=float, default=0.1)
     parser.add_argument("--weighting", default="lognormal", type=str, help="uniform or lognormal")
     parser.add_argument("--P_mean", type=float, default=0.0)
     parser.add_argument("--P_std", type=float, default=1.0)
