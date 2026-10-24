@@ -1,11 +1,11 @@
 <div align="center">
 
-## ${\color{#7a1f2b}\huge\pmb{\boldsymbol{\mathsf{UDT}}}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
+### ${\large {\color{#7a1f2b}\boldsymbol{\mathsf{UDT}}}\boldsymbol{\mathsf{{:}\ Reconciling\ U{\text{-}}Nets\ and\ Diffusion\ Transformers}}}$<br />${\large \boldsymbol{\mathsf{with\ Data{\text{-}}Adaptive\ Token\ Reduction}}}$
 
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-B39DDB.svg" alt="NeurIPS 2026 Spotlight">
+  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight">
   <a href="https://arxiv.org/pdf/2608.01298"><img src="https://img.shields.io/badge/arXiv-2608.01298-red.svg" alt="arXiv"></a>
   <a href="https://udt-dit.github.io/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page"></a>
 </p>
