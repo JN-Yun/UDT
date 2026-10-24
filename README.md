@@ -1,10 +1,6 @@
-<p align="left">
-  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight" width="222">
-</p>
-
 <div align="center">
 
-# UDT: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
+# <img align="left" src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight" width="222"><br clear="left">UDT: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
 
 
 </div>
