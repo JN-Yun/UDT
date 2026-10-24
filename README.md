@@ -6,9 +6,9 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight" height="24">
-  <a href="https://arxiv.org/pdf/2608.01298"><img src="https://img.shields.io/badge/arXiv-2608.01298-red.svg" alt="arXiv" height="24"></a>
-  <a href="https://udt-dit.github.io/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page" height="24"></a>
+  <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight" height="28">
+  <a href="https://arxiv.org/pdf/2608.01298"><img src="https://img.shields.io/badge/arXiv-2608.01298-red.svg" alt="arXiv" height="28"></a>
+  <a href="https://udt-dit.github.io/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page" height="28"></a>
 </p>
 
 <div align="center">
