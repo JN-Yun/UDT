@@ -1,6 +1,6 @@
 <div align="center">
 
-### ${\color{#7a1f2b}\huge\pmb{\boldsymbol{\mathsf{UDT}}}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
+## ${\color{#7a1f2b}\huge\pmb{\boldsymbol{\mathsf{UDT}}}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
 
 </div>
 
