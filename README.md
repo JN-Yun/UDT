@@ -1,6 +1,6 @@
 <div align="center">
 
-## ${\color{#7a1f2b}\huge\pmb{\boldsymbol{\mathsf{UDT}}}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
+### ${\color{#7a1f2b}\huge\pmb{\boldsymbol{\mathsf{UDT}}}}$: Reconciling U-Nets and Diffusion Transformers<br />with Data-Adaptive Token Reduction
 
 </div>
 
@@ -32,6 +32,7 @@ We introduce **U-Net Diffusion Transformer (UDT)**, a novel architecture that co
   - UDT-XL/2+ with VA-VAE: **1.35** FID at 500 epochs
 - UDT-XL/2+ achieves **1.58** FID without REPA on ImageNet @ $512 \times 512$.
 
+---
 
 ### 1. Create Conda Environment and Install Requirements
 
