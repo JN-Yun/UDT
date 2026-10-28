@@ -8,6 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Conference-%2726%20NeurIPS%20Spotlight-9575CD.svg" alt="NeurIPS 2026 Spotlight" width="242">
   <a href="https://arxiv.org/pdf/2608.01298"><img src="https://img.shields.io/badge/arXiv-2608.01298-red.svg" alt="arXiv" width="139"></a>
+  <br>
   <a href="https://udt-dit.github.io/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page" width="103"></a>
 </p>
 
